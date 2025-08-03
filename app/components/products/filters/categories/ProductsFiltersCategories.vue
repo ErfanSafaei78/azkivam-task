@@ -4,7 +4,7 @@
     v-if="fetchStatus === 'success'"
     class="flex flex-col gap-6 text-neutral-800"
   >
-    <ProductsFiltersCategoriesItem
+    <LazyProductsFiltersCategoriesItem
       v-for="category in categories"
       :key="category.id"
       :category="category"

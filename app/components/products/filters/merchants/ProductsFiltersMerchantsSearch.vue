@@ -11,6 +11,7 @@
     >
     <NuxtImg
       src="/icons/search.svg"
+      alt="Search"
       width="20"
       height="20"
       loading="lazy"

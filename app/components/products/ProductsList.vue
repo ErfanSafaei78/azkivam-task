@@ -19,6 +19,7 @@
           v-slot="{ src, isLoaded, imgAttrs }"
           :src="product.imageUrl"
           :alt="product.name"
+          loading="lazy"
           class="w-full self-center aspect-square object-cover"
           custom
         >

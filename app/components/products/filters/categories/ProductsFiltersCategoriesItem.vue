@@ -10,6 +10,7 @@
     <NuxtImg
       v-if="category.children?.length"
       src="/icons/arrow-up.svg"
+      alt="Toggle"
       width="28"
       class="transition-transform duration-500"
       :class="{ 'rotate-180': !isToggled }"

@@ -6,8 +6,11 @@
   >
     <ProductsFiltersMerchantsSearch v-model="searchQuery" />
 
-    <div class="flex flex-col gap-6 overflow-y-auto max-h-40">
-      <ProductsFiltersMerchantsItem
+    <div
+      v-if="filteredMerchants.length"
+      class="flex flex-col gap-6 overflow-y-auto max-h-40"
+    >
+      <LazyProductsFiltersMerchantsItem
         v-for="merchant in filteredMerchants"
         :key="merchant.id"
         :merchant="merchant"
@@ -15,6 +18,9 @@
         @change="handleSelect(merchant.id)"
       />
     </div>
+    <span v-if="!filteredMerchants.length" class="w-full text-sm text-center p-4">
+      موردی یافت نشد
+    </span>
   </div>
   <div v-else-if="fetchStatus === 'pending'" class="flex flex-col gap-2">
     <span

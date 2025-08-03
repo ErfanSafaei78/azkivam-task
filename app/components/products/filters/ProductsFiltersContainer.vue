@@ -2,7 +2,7 @@
   <aside
     class="max-lg:hidden w-1/5 h-max min-h-[100vh] bg-white rounded-xl border border-solid border-stone-500 overflow-y-auto"
   >
-    <ProductsFilters />
+    <LazyProductsFilters />
   </aside>
   <div
     class="lg:hidden w-full flex items-center px-4 py-2 bg-white rounded-xl border border-solid border-stone-300"
@@ -14,9 +14,9 @@
       فیلتر‌ها
     </button>
   </div>
-  <BaseModal v-model="showModal">
-    <ProductsFilters />
-  </BaseModal>
+  <LazyBaseModal v-model="showModal">
+    <LazyProductsFilters />
+  </LazyBaseModal>
 </template>
 
 <script lang="ts" setup>
