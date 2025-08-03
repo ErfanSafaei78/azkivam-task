@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="max-lg:hidden w-1/5 h-max min-h-[100vh] bg-white rounded-xl border border-solid border-stone-500 overflow-y-auto"
+    class="max-lg:hidden w-1/5 h-max min-h-max bg-white rounded-xl border border-solid border-stone-500 overflow-y-auto"
   >
     <LazyProductsFilters />
   </aside>
